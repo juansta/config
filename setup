@@ -1,6 +1,24 @@
 #!/bin/bash
 
 pushd ..
-ln -s config/.vimrc .
-ln -s config/.bashrc .
+
+if [ ! -f .vimrc ]; then
+    ln -s config/.vimrc .
+else
+    rm .vimrc
+    ln -s config/.vimrc .
+fi
+
+if [ ! -f .bashrc ]; then
+    ln -s config/.bashrc .
+else
+    rm .bashrc
+    ln -s config/.bashrc .
+fi
+source ~/.bashrc
 popd
+
+# Check to see if Vundle is already installed
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
