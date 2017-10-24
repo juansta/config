@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pushd ..
+ln -s config/.vimrc .
+ln -s config/.bashrc .
+popd
