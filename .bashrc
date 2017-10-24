@@ -33,4 +33,4 @@ export QT_PLUGIN_PATH
 
 #export PATH=/home/juan/ti/gcc-linaro-6.2.1-2016.11-x86_64_arm-linux-gnueabi/bin:$PATH
 #export TI_SDK_PATH=/home/juan/ti/ti-sdk-omapl138-lcdk-01.00.00
-export PATH=/home/juan/ti/ti-processor-sdk-linux-omapl138-lcdk-04.00.00.04/linux-devkit/sysroots/x86_64-arago-linux/usr/bin:$PATH
+export PATH=$PATH:/home/juan/ti/ti-processor-sdk-linux-omapl138-lcdk-04.00.00.04/linux-devkit/sysroots/x86_64-arago-linux/usr/bin
