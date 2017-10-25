@@ -143,3 +143,6 @@ let g:airline#extensions#tabline#enabled = 1        " Airline Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:clang_format#detect_style_file = 1
 let g:ycm_confirm_extra_conf = 0
+
+" go to first position if in a git commit message
+au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
