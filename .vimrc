@@ -61,8 +61,8 @@ command W w !sudo tee % > /dev/null
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set so=7        " Set 7 lines to the cursor - when moving vertically using j/k
-set wildmenu        " Turn on the WiLd menu
+set so=7     " Set 7 lines to the cursor - when moving vertically using j/k
+set wildmenu " Turn on the WiLd menu
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
@@ -72,9 +72,9 @@ else
 	set wildignore+=.git\*,.hg\*,.svn\*
 endif
 
-set ruler       "Always show current position
-set cmdheight=2     " Height of the command bar
-set hid     " A buffer becomes hidden when it is abandoned
+set ruler       " Always show current position
+set cmdheight=2 " Height of the command bar
+set hid         " A buffer becomes hidden when it is abandoned
 
 set backspace=eol,start,indent      " Configure backspace so it acts as it should act
 set whichwrap+=<,>,h,l
@@ -125,15 +125,17 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set expandtab    " Use spaces instead of tabs
-set smarttab     " Be smart when using tabs ;)
-set shiftwidth=4 " 1 tab == 4 spaces
+set expandtab         " Use spaces instead of tabs
+set smarttab          " Be smart when using tabs ;)
+set shiftwidth=4      " 1 tab == 4 spaces
 set tabstop=4
-set lbr          " Linebreak on 500 characters
+set lbr               " Linebreak on 500 characters
 set tw=500
-set ai           " Auto indent
-set si           " Smart indent
-set wrap         " Wrap lines
+set ai                " Auto indent
+set si                " Smart indent
+set wrap              " Wrap lines
+set foldmethod=syntax " add folds based on syntax
+set foldnestmax=1     " only nest folds to a single level
 
 let g:vim_markdown_folding_disabled = 1
 let g:airline#extensions#tabline#enabled = 1        " Airline Configuration
