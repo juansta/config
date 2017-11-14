@@ -1,0 +1,13 @@
+[user]
+	email = juan.aguero@acousticresearch.com.au
+	name = Juan Aguero
+[core]
+	editor = vim
+[push]
+	recurseSubmodules = on-demand
+[diff]
+    tool = vimdiff
+[merge]
+    tool = vimdiff
+[difftool "vimdiff"]
+    prompt = false

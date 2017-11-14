@@ -9,6 +9,13 @@ else
     ln -s config/.vimrc .
 fi
 
+if [ ! -f .gitconfig ]; then
+    ln -s config/.gitconfig .
+else
+    rm .gitconfig
+    ln -s config/.gitconfig .
+fi
+
 if [ ! -f .bashrc ]; then
     ln -s config/.bashrc .
 else
