@@ -148,3 +148,7 @@ let g:ycm_confirm_extra_conf = 0
 
 " go to first position if in a git commit message
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+
+" map ',cf' to ':ClangFormat' only on cpp files
+autocmd FileType h,c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType h,c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
